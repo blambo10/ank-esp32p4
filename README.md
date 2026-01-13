@@ -1,4 +1,4 @@
-## ESP32P4 Dev Board Sync Project using ESP-IDF
+## ANK ESP32P4 Dev Board Sync Project using ESP-IDF
 
 This project is designed to sync data from one esp32p4 controller to another over the UART protocol.It contains two source files a main.c which is intended for primary controller and slave.c intended for the board that is to receive the data from the primary [main.c](main/main.c). The file is located in folder [main](main).
 
@@ -22,11 +22,11 @@ Below is short explanation of remaining files in the project folder.
 
 ## Build master.c 
 
-* idf.py build -DCONFIG_NAME=slave_config
+* idf.py build -DCONFIG_NAME=master_config
 
 ## Build slave.c 
 
-* idf.py build -DCONFIG_NAME=master_config
+* idf.py build -DCONFIG_NAME=slave_config
 
 ## deploy to board & monitor
 
